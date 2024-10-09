@@ -1,0 +1,263 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNXN/DN3fswa4gflBgscscQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Viniciogyn/aula3/blob/main/exercicio_professor_Daniel\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "8xeeunqeIp2E"
+      },
+      "outputs": [],
+      "source": [
+        "print(\"---------------------------------\")\n",
+        "print(\" SOMA  \")\n",
+        "print(\"---------------------------------\")\n",
+        "num1 = int(input(\"Digite o primeiro número: \"))\n",
+        "num2 = int(input(\"Digite o segundo número: \"))\n",
+        "soma = num1 + num2\n",
+        "print(\"A soma dos números é: \", soma)\n",
+        "print(\"---------------------------------\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"---------------------------------\")\n",
+        "print(\"CONVERSÃO DE METROS PARA MILIMETROS\")\n",
+        "print(\"---------------------------------\")\n",
+        "metros = float(input(\"Digite o valor em metros: \"))\n",
+        "milimetros = metros * 1000\n",
+        "print(\"O valor em milímetros é: \", milimetros)\n",
+        "print(\"---------------------------------\")"
+      ],
+      "metadata": {
+        "id": "MuxDjbbZJPIH"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"----------------------------------\")\n",
+        "print(\"converter hora e minutos\")\n",
+        "print(\"----------------------------------\")\n",
+        "hora = int(input(\"digite a hora: \"))\n",
+        "minutos = int(input(\"digite os minutos:\"))\n",
+        "segundos = hora * 3600 + minutos * 60\n",
+        "print(\"você escolheu\",hora,\"horas e\",minutos,\"minutos, que equivale a: \",segundos,\"segundos!\")\n"
+      ],
+      "metadata": {
+        "id": "4cVa_AhEKE3I"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"----------------------------------\")\n",
+        "print(\"Desconto de um produto\")\n",
+        "print(\"----------------------------------\")\n",
+        "preco_total = float(input(\"Digite o valor total do produto: \"))\n",
+        "desconto = float(input(\"Digite o valor do desconto dado ao cliente:\"))\n",
+        "preco_final = preco_total - (preco_total * (desconto/100))\n",
+        "print(\"o valor final do produto com desconto é de \",preco_final)"
+      ],
+      "metadata": {
+        "id": "-NqBKmQgLF1_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"---------------------------------\")\n",
+        "print(\"Aumento de salario\")\n",
+        "print(\"---------------------------------\")\n",
+        "salario = float(input(\"Digite o seu salario mensal: \"))\n",
+        "aumento = float(input(\"Digite o valor do aumento em %\"))\n",
+        "salario_final = salario + (salario * (aumento/100))\n",
+        "print(\"o seu salario era de:R$\",salario,\", com o aumento seu novo salario é de:R$\",salario_final)"
+      ],
+      "metadata": {
+        "id": "e0AUHZSHMAGI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"------------------------------------\")\n",
+        "print(\" calculo de tempo de viagem\")\n",
+        "print(\"------------------------------------\")\n",
+        "distancia = float(input(\"Digite a distancia em km que ira percorrer: \"))\n",
+        "velocidade_media = float(input(\"Digite a velocidade media em km/h: \"))\n",
+        "tempo_viagem = distancia / velocidade_media\n",
+        "print(\"você irá percorrer:\",distancia,\"km, em uma velocidade média de:\",velocidade_media,\" e fará isso em:\",tempo_viagem,\"hora(s)\")"
+      ],
+      "metadata": {
+        "id": "MUDfDukdNMu4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"------------------------------------\")\n",
+        "print(\" Conversão de temperatura\")\n",
+        "print(\"------------------------------------\")\n",
+        "temperatura = float(input(\"digite a temperatura em Graus Celsius:\"))\n",
+        "temperatura_2 = (temperatura * 9/5) + 32\n",
+        "print(\"A sua temperatura em Celsius era de:\",temperatura,\"com a conversao para fahrenheit ele passa a ser de\",temperatura_2,\"Graus fahrenheit.\")\n"
+      ],
+      "metadata": {
+        "id": "pqgUem0qOuwA"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"---------------------------------------\")\n",
+        "print(\" Aluguel de carro \")\n",
+        "print(\"---------------------------------------\")\n",
+        "dias = int(input(\"Me informe por quantos dias voce alugou o carro:\"))\n",
+        "km = int(input(\"me informe quantos km voce percorreu com o carro:\"))\n",
+        "preco_total = (dias * 60) + (km * 0.15)\n",
+        "print(\"lembrando que o valor cobrado por dias é de R$ 60,00 e o valor cobrado por km é de R$ 0,15\")\n",
+        "print(\"e sabendo que voce alugou o carro por\", dias,\"dias e percorreu o total de \",km,\"km\")\n",
+        "print(\"o valor total a ser pago é de : R$\",preco_total)"
+      ],
+      "metadata": {
+        "id": "iTD28ZiNQ3EI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"----------------------------------------\")\n",
+        "print(\"calculo de reduçao de cigarro\")\n",
+        "print(\"----------------------------------------\")\n",
+        "cigarro = int(input(\"Quantos cigarros você fuma em um dia?\"))\n",
+        "anos = int(input(\"A quantos anos você fuma?\"))\n",
+        "reducao_diaria = cigarro * 10\n",
+        "reducao_anual = reducao_diaria * 365\n",
+        "reducao_total_min = reducao_anual * anos\n",
+        "reducao_total_dias = reducao_total_min / (60 * 24)\n",
+        "print(\"voce esta perdendo aproximadamente\", reducao_total_dias,\"dias de vida por causa do cigarro.\")"
+      ],
+      "metadata": {
+        "id": "jV0IyDPVW_c_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"---------------------------------------------\")\n",
+        "print(\" calculo de multa de velocidade\")\n",
+        "print(\"---------------------------------------------\")\n",
+        "velocidade = int(input(\"Qual a velocidade do carro ao passar no radar?\"))\n",
+        "if velocidade > 80:\n",
+        "    multa = (velocidade - 80) * 5\n",
+        "print(\"Sua velocidade ao passar no radar foi de:\", velocidade,\"km/h\")\n",
+        "print(\"Você foi multado em R$\",multa,\"reais\")"
+      ],
+      "metadata": {
+        "id": "NcM-ipZSeohg"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"----------------------------------------------\")\n",
+        "print(\"Maior e menor número\")\n",
+        "print(\"----------------------------------------------\")\n",
+        "num1 = int(input(\"Digite o primeiro número a ser conferido: \"))\n",
+        "num2 = int(input(\"Digite o segundo número a ser conferido: \"))\n",
+        "num3 = int(input(\"Digite o terceiro número a ser conferido: \"))\n",
+        "if num1 > num2 and num1 > num3 :\n",
+        "    print(\"O primeiro número é o maior\")\n",
+        "if num2 > num1 and num2 > num3 :\n",
+        "    print(\"O segundo número é o maior\")\n",
+        "if num3 > num1 and num3 > num2 :\n",
+        "    print(\"O terceiro número é o maior\")"
+      ],
+      "metadata": {
+        "id": "XIG4JHC5ff8P"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"-----------------------------------------------\")\n",
+        "print(\"calculo de aumento de salario 2\")\n",
+        "print(\"------------------------------------------------\")\n",
+        "salario = float(input(\"Qual o seu salario atual na empresa: \"))\n",
+        "if salario <= 1250.00 :\n",
+        "    aumento = (salario *10) / 100\n",
+        "if salario > 1250.00 :\n",
+        "    aumento = (salario * 15) / 100\n",
+        "print(\"o seu salario atual da empresa era de: R$\", salario,\", e passa a ser: R$\",salario + aumento)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wNgsz8LcgRmg",
+        "outputId": "458b0e83-a334-43a4-f7ca-ab716fb4ae02"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "-----------------------------------------------\n",
+            "calculo de aumento de salario 2\n",
+            "------------------------------------------------\n",
+            "Qual o seu salario atual na empresa: 2000\n",
+            "o seu salario atual da empresa era de: R$ 2000.0 , e passa a ser: R$ 2300.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
